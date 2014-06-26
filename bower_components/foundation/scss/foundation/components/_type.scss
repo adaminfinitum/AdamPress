@@ -63,7 +63,7 @@ $code-font-weight: $font-weight-bold !default;
 $anchor-text-decoration: none !default;
 $anchor-text-decoration-hover: none !default;
 $anchor-font-color: $primary-color !default;
-$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%) !default;
+$anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -20%) !default;
 
 // We use these to style the <hr> element
 $hr-border-width: 1px !default;
@@ -72,7 +72,7 @@ $hr-border-color: #ddd !default;
 $hr-margin: rem-calc(20) !default;
 
 // We use these to style lists
-$list-font-family: $paragraph-font-family !default;
+$list-font-family: sans-serif !default;
 $list-font-size: $paragraph-font-size !default;
 $list-line-height: $paragraph-line-height !default;
 $list-margin-bottom: $paragraph-margin-bottom !default;

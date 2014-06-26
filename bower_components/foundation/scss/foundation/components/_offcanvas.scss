@@ -43,6 +43,8 @@ $off-canvas-label-margin:0 !default;
 $off-canvas-link-padding: rem-calc(10, 15) !default;
 $off-canvas-link-color: rgba(#FFF, 0.7) !default;
 $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%) !default;
+$off-canvas-link-font-family: $header-font-family !default;
+$off-canvas-link-text-transform: uppercase !default;
 
 // Off Canvas Menu Icon Variables
 $tabbar-menu-icon-color: #FFF !default;
@@ -310,7 +312,11 @@ $menu-slide: "transform 500ms ease" !default;
     .left-off-canvas-menu { @include off-canvas-menu($position: left); }
     .right-off-canvas-menu { @include off-canvas-menu($position: right); }
 
-    ul.off-canvas-list { @include off-canvas-list; }
+    ul.off-canvas-list {
+      @include off-canvas-list;
+      font-family: $header-font-family;
+      text-transform: uppercase;
+    }
 
 
     // ANIMATION CLASSES

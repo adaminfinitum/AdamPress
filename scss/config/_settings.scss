@@ -54,12 +54,12 @@ $body-font-family: "Droid Serif", sans-serif;
 // $default-float: left;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+ $primary-color: #025a9a;
+ $secondary-color: #e7e7e7;
+ $alert-color: #f04124;
+ $success-color: #43AC6A;
+ $warning-color: #f08a24;
+ $info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -143,7 +143,7 @@ $header-font-weight: 500;
 // $subheader-bottom-margin: .5rem;
 
 // A general <small> styling
-// $small-font-size: 60%;
+$small-font-size: 75%;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
@@ -165,7 +165,7 @@ $header-font-weight: 500;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+$anchor-font-color-hover: scale-color($primary-color, $lightness: -20%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -660,7 +660,7 @@ $button-font-family: $header-font-family;
 
 // $include-html-off-canvas-classes: $include-html-classes;
 
-// $tabbar-bg: #333;
+ $tabbar-bg: $primary-color;
 // $tabbar-height: rem-calc(45);
 // $tabbar-line-height: $tabbar-height;
 // $tabbar-color: #fff;
@@ -690,7 +690,7 @@ $button-font-family: $header-font-family;
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
 // $off-canvas-link-padding: rem-calc(10, 15);
-// $off-canvas-link-color: rgba(#fff, 0.7);
+$off-canvas-link-color: rgba(#fff, 0.7);
 // $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
 
 // Off Canvas Menu Icon Variables
@@ -1007,7 +1007,7 @@ $side-nav-font-family: $header-font-family;
 // $sub-nav-list-padding-top: rem-calc(4);
 
 // We use this to control the definition
-// $sub-nav-font-family: $body-font-family;
+ $sub-nav-font-family: $header-font-family;
 // $sub-nav-font-size: rem-calc(14);
 // $sub-nav-font-color: #999;
 // $sub-nav-font-weight: normal;
@@ -1168,7 +1168,7 @@ $tabs-navigation-font-family: $header-font-family;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+ $topbar-bg-color: $primary-color;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1200,8 +1200,9 @@ $tabs-navigation-font-family: $header-font-family;
 // $topbar-link-bg-hover: #272727;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
-$topbar-link-font-family: $header-font-family;
-// $topbar-link-text-transform: none;
+ $topbar-link-font-family: $header-font-family;
+ $topbar-link-text-transform: uppercase;
+
 // $topbar-link-padding: $topbar-height / 3;
 
 // $topbar-button-font-size: 0.75rem;
