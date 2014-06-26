@@ -45,7 +45,7 @@
     </section>
     <section class="middle tab-bar-section">
 
-      <h1 class="title"><?php bloginfo( 'name' ); ?></h1>
+      <p class="h1 title"><a href="<?php echo home_url(); ?>" rel="home" title="home"><?php bloginfo( 'name' ); ?></a></p>
 
     </section>
   </nav>
@@ -58,7 +58,7 @@
             <nav class="top-bar" data-topbar="">
                 <ul class="title-area">
                     <li class="name">
-                        <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+                        <p class="h1"><a href="<?php echo home_url(); ?>" rel="home" title="home"><?php bloginfo('name'); ?></a></p>
                     </li>
                 </ul>
                 <section class="top-bar-section">
@@ -67,8 +67,6 @@
                 </section>
             </nav>
         </div>
-
-
 
 <section class="container" role="document">
   <?php do_action('AdamPress_after_header'); ?>

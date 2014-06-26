@@ -4457,7 +4457,7 @@ p {
 
 /* Default header styles */
 /* line 243, bower_components/foundation/scss/foundation/components/type */
-h1, h2, h3, h4, h5, h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -4467,33 +4467,33 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   line-height: 1.4; }
   /* line 253, bower_components/foundation/scss/foundation/components/type */
-  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small {
     font-size: 75%;
     color: #6f6f6f;
     line-height: 0; }
 
 /* line 260, bower_components/foundation/scss/foundation/components/type */
-h1 {
+h1, .h1 {
   font-size: 2.125rem; }
 
 /* line 261, bower_components/foundation/scss/foundation/components/type */
-h2 {
+h2, .h2 {
   font-size: 1.6875rem; }
 
 /* line 262, bower_components/foundation/scss/foundation/components/type */
-h3 {
+h3, .h3 {
   font-size: 1.375rem; }
 
 /* line 263, bower_components/foundation/scss/foundation/components/type */
-h4 {
+h4, .h4 {
   font-size: 1.125rem; }
 
 /* line 264, bower_components/foundation/scss/foundation/components/type */
-h5 {
+h5, .h5 {
   font-size: 1.125rem; }
 
 /* line 265, bower_components/foundation/scss/foundation/components/type */
-h6 {
+h6, .h6 {
   font-size: 1rem; }
 
 /* line 267, bower_components/foundation/scss/foundation/components/type */
@@ -4662,25 +4662,25 @@ blockquote, blockquote p {
 
 @media only screen and (min-width:40.063em) {
   /* line 439, bower_components/foundation/scss/foundation/components/type */
-  h1, h2, h3, h4, h5, h6 {
+  h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     line-height: 1.4; }
   /* line 440, bower_components/foundation/scss/foundation/components/type */
-  h1 {
+  h1, .h1 {
     font-size: 2.75rem; }
   /* line 441, bower_components/foundation/scss/foundation/components/type */
-  h2 {
+  h2, .h2 {
     font-size: 2.3125rem; }
   /* line 442, bower_components/foundation/scss/foundation/components/type */
-  h3 {
+  h3, .h3 {
     font-size: 1.6875rem; }
   /* line 443, bower_components/foundation/scss/foundation/components/type */
-  h4 {
+  h4, .h4 {
     font-size: 1.4375rem; }
   /* line 444, bower_components/foundation/scss/foundation/components/type */
-  h5 {
+  h5, .h5 {
     font-size: 1.125rem; }
   /* line 445, bower_components/foundation/scss/foundation/components/type */
-  h6 {
+  h6, .h6 {
     font-size: 1rem; } }
 
 /*
@@ -5030,12 +5030,12 @@ meta.foundation-mq-topbar {
     margin: 0;
     font-size: 16px; }
     /* line 186, bower_components/foundation/scss/foundation/components/top-bar */
-    .top-bar .name h1 {
+    .top-bar .name h1, .top-bar .name .h1 {
       line-height: 45px;
-      font-size: 1.0625rem;
+      font-size: 1.4375rem;
       margin: 0; }
       /* line 190, bower_components/foundation/scss/foundation/components/top-bar */
-      .top-bar .name h1 a {
+      .top-bar .name h1 a, .top-bar .name .h1 a {
         font-weight: normal;
         color: white;
         width: 75%;
@@ -5344,7 +5344,7 @@ meta.foundation-mq-topbar {
     .top-bar .title-area {
       float: left; }
     /* line 444, bower_components/foundation/scss/foundation/components/top-bar */
-    .top-bar .name h1 a {
+    .top-bar .name .h1 a {
       width: auto; }
     /* line 448, bower_components/foundation/scss/foundation/components/top-bar */
     .top-bar input, .top-bar .button, .top-bar button {
@@ -5515,7 +5515,7 @@ meta.foundation-mq-topbar {
     clip: auto;
     position: absolute !important; } }
 
-/* line 276, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 280, bower_components/foundation/scss/foundation/components/offcanvas */
 .off-canvas-wrap {
   -webkit-backface-visibility: hidden;
   position: relative;
@@ -5526,7 +5526,7 @@ meta.foundation-mq-topbar {
     min-height: 100%;
     -webkit-overflow-scrolling: touch; }
 
-/* line 277, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 281, bower_components/foundation/scss/foundation/components/offcanvas */
 .inner-wrap {
   -webkit-backface-visibility: hidden;
   position: relative;
@@ -5544,7 +5544,7 @@ meta.foundation-mq-topbar {
   .inner-wrap:after {
     clear: both; }
 
-/* line 279, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 283, bower_components/foundation/scss/foundation/components/offcanvas */
 .tab-bar {
   -webkit-backface-visibility: hidden;
   background: #025a9a;
@@ -5553,16 +5553,19 @@ meta.foundation-mq-topbar {
   line-height: 2.8125rem;
   position: relative; }
   /* line 160, bower_components/foundation/scss/foundation/components/offcanvas */
-  .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4, .tab-bar h5, .tab-bar h6 {
+  .tab-bar h1, .tab-bar .h1, .tab-bar h2, .tab-bar .h2, .tab-bar h3, .tab-bar .h3, .tab-bar h4, .tab-bar .h4, .tab-bar h5, .tab-bar .h5, .tab-bar h6, .tab-bar .h6 {
     color: white;
     font-weight: bold;
     line-height: 2.8125rem;
     margin: 0; }
-  /* line 166, bower_components/foundation/scss/foundation/components/offcanvas */
-  .tab-bar h1, .tab-bar h2, .tab-bar h3, .tab-bar h4 {
-    font-size: 1.125rem; }
+    /* line 166, bower_components/foundation/scss/foundation/components/offcanvas */
+    .tab-bar h1 a, .tab-bar h1 a:link, .tab-bar .h1 a, .tab-bar .h1 a:link, .tab-bar h2 a, .tab-bar h2 a:link, .tab-bar .h2 a, .tab-bar .h2 a:link, .tab-bar h3 a, .tab-bar h3 a:link, .tab-bar .h3 a, .tab-bar .h3 a:link, .tab-bar h4 a, .tab-bar h4 a:link, .tab-bar .h4 a, .tab-bar .h4 a:link, .tab-bar h5 a, .tab-bar h5 a:link, .tab-bar .h5 a, .tab-bar .h5 a:link, .tab-bar h6 a, .tab-bar h6 a:link, .tab-bar .h6 a, .tab-bar .h6 a:link {
+      color: white; }
+  /* line 170, bower_components/foundation/scss/foundation/components/offcanvas */
+  .tab-bar h1, .tab-bar .h1, .tab-bar h2, .tab-bar .h2, .tab-bar h3, .tab-bar .h3, .tab-bar h4, .tab-bar .h4 {
+    font-size: 1.4375rem; }
 
-/* line 281, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 285, bower_components/foundation/scss/foundation/components/offcanvas */
 .left-small {
   width: 2.8125rem;
   height: 2.8125rem;
@@ -5571,7 +5574,7 @@ meta.foundation-mq-topbar {
   border-right: solid 1px #012d4d;
   left: 0; }
 
-/* line 282, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 286, bower_components/foundation/scss/foundation/components/offcanvas */
 .right-small {
   width: 2.8125rem;
   height: 2.8125rem;
@@ -5580,7 +5583,7 @@ meta.foundation-mq-topbar {
   border-left: solid 1px #012d4d;
   right: 0; }
 
-/* line 284, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 288, bower_components/foundation/scss/foundation/components/offcanvas */
 .tab-bar-section {
   padding: 0 0.625rem;
   position: absolute;
@@ -5590,20 +5593,20 @@ meta.foundation-mq-topbar {
   @media only screen and (min-width:40.063em) {
     .tab-bar-section {
       text-align: left; } }
-  /* line 197, bower_components/foundation/scss/foundation/components/offcanvas */
+  /* line 201, bower_components/foundation/scss/foundation/components/offcanvas */
   .tab-bar-section.left {
     left: 0;
     right: 2.8125rem; }
-  /* line 201, bower_components/foundation/scss/foundation/components/offcanvas */
+  /* line 205, bower_components/foundation/scss/foundation/components/offcanvas */
   .tab-bar-section.right {
     left: 2.8125rem;
     right: 0; }
-  /* line 205, bower_components/foundation/scss/foundation/components/offcanvas */
+  /* line 209, bower_components/foundation/scss/foundation/components/offcanvas */
   .tab-bar-section.middle {
     left: 2.8125rem;
     right: 2.8125rem; }
 
-/* line 288, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 292, bower_components/foundation/scss/foundation/components/offcanvas */
 .tab-bar .menu-icon {
   text-indent: 2.1875rem;
   width: 2.8125rem;
@@ -5628,7 +5631,7 @@ meta.foundation-mq-topbar {
   .tab-bar .menu-icon span:hover:after {
     box-shadow: 0 0px 0 1px #b3b3b3, 0 7px 0 1px #b3b3b3, 0 14px 0 1px #b3b3b3; }
 
-/* line 312, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 316, bower_components/foundation/scss/foundation/components/offcanvas */
 .left-off-canvas-menu {
   -webkit-backface-visibility: hidden;
   width: 15.625rem;
@@ -5652,7 +5655,7 @@ meta.foundation-mq-topbar {
   .left-off-canvas-menu * {
     -webkit-backface-visibility: hidden; }
 
-/* line 313, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 317, bower_components/foundation/scss/foundation/components/offcanvas */
 .right-off-canvas-menu {
   -webkit-backface-visibility: hidden;
   width: 15.625rem;
@@ -5676,14 +5679,14 @@ meta.foundation-mq-topbar {
   .right-off-canvas-menu * {
     -webkit-backface-visibility: hidden; }
 
-/* line 315, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 319, bower_components/foundation/scss/foundation/components/offcanvas */
 ul.off-canvas-list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase; }
-  /* line 219, bower_components/foundation/scss/foundation/components/offcanvas */
+  /* line 223, bower_components/foundation/scss/foundation/components/offcanvas */
   ul.off-canvas-list li label {
     display: block;
     padding: 0.3rem 0.9375rem;
@@ -5695,18 +5698,18 @@ ul.off-canvas-list {
     border-top: 1px solid #5e5e5e;
     border-bottom: none;
     margin: 0; }
-  /* line 231, bower_components/foundation/scss/foundation/components/offcanvas */
+  /* line 235, bower_components/foundation/scss/foundation/components/offcanvas */
   ul.off-canvas-list li a {
     display: block;
     padding: 0.66667rem;
     color: rgba(255, 255, 255, 0.7);
     border-bottom: 1px solid #262626;
     transition: background 300ms ease; }
-    /* line 236, bower_components/foundation/scss/foundation/components/offcanvas */
+    /* line 240, bower_components/foundation/scss/foundation/components/offcanvas */
     ul.off-canvas-list li a:hover {
       background: #013f6c; }
 
-/* line 325, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 329, bower_components/foundation/scss/foundation/components/offcanvas */
 .move-right > .inner-wrap {
   -ms-transform: translate(15.625rem, 0);
   -webkit-transform: translate3d(15.625rem, 0, 0);
@@ -5714,7 +5717,7 @@ ul.off-canvas-list {
   -ms-transform: translate3d(15.625rem, 0, 0);
   -o-transform: translate3d(15.625rem, 0, 0);
   transform: translate3d(15.625rem, 0, 0); }
-/* line 328, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 332, bower_components/foundation/scss/foundation/components/offcanvas */
 .move-right .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
@@ -5730,11 +5733,11 @@ ul.off-canvas-list {
   z-index: 1002;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   @media only screen and (min-width:40.063em) {
-    /* line 264, bower_components/foundation/scss/foundation/components/offcanvas */
+    /* line 268, bower_components/foundation/scss/foundation/components/offcanvas */
     .move-right .exit-off-canvas:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
-/* line 332, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 336, bower_components/foundation/scss/foundation/components/offcanvas */
 .move-left > .inner-wrap {
   -ms-transform: translate(-15.625rem, 0);
   -webkit-transform: translate3d(-15.625rem, 0, 0);
@@ -5742,7 +5745,7 @@ ul.off-canvas-list {
   -ms-transform: translate3d(-15.625rem, 0, 0);
   -o-transform: translate3d(-15.625rem, 0, 0);
   transform: translate3d(-15.625rem, 0, 0); }
-/* line 336, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 340, bower_components/foundation/scss/foundation/components/offcanvas */
 .move-left .exit-off-canvas {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
@@ -5758,11 +5761,11 @@ ul.off-canvas-list {
   z-index: 1002;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   @media only screen and (min-width:40.063em) {
-    /* line 264, bower_components/foundation/scss/foundation/components/offcanvas */
+    /* line 268, bower_components/foundation/scss/foundation/components/offcanvas */
     .move-left .exit-off-canvas:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
-/* line 339, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 343, bower_components/foundation/scss/foundation/components/offcanvas */
 .offcanvas-overlap .left-off-canvas-menu, .offcanvas-overlap .right-off-canvas-menu {
   -ms-transform: none;
   -webkit-transform: none;
@@ -5770,7 +5773,7 @@ ul.off-canvas-list {
   -o-transform: none;
   transform: none;
   z-index: 1003; }
-/* line 347, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 351, bower_components/foundation/scss/foundation/components/offcanvas */
 .offcanvas-overlap .exit-offcanvas-menu {
   -webkit-backface-visibility: hidden;
   transition: background 300ms ease;
@@ -5787,20 +5790,20 @@ ul.off-canvas-list {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   z-index: 1002; }
   @media only screen and (min-width:40.063em) {
-    /* line 264, bower_components/foundation/scss/foundation/components/offcanvas */
+    /* line 268, bower_components/foundation/scss/foundation/components/offcanvas */
     .offcanvas-overlap .exit-offcanvas-menu:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
-/* line 355, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 359, bower_components/foundation/scss/foundation/components/offcanvas */
 .no-csstransforms .left-off-canvas-menu {
   left: -15.625rem; }
-/* line 356, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 360, bower_components/foundation/scss/foundation/components/offcanvas */
 .no-csstransforms .right-off-canvas-menu {
   right: -15.625rem; }
-/* line 358, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 362, bower_components/foundation/scss/foundation/components/offcanvas */
 .no-csstransforms .move-left > .inner-wrap {
   right: 15.625rem; }
-/* line 359, bower_components/foundation/scss/foundation/components/offcanvas */
+/* line 363, bower_components/foundation/scss/foundation/components/offcanvas */
 .no-csstransforms .move-right > .inner-wrap {
   left: 15.625rem; }
 
@@ -6235,10 +6238,21 @@ th.hide-for-touch {
 	 * 4.2 Posts
 	 * ------------------------------------
 	 */
+/* line 88, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/structure */
+blockquote {
+  background-color: #f1f7fb;
+  color: #003366;
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(200, 200, 200, 0.6); }
+
 /**
 	 * 4.3 Widgets
 	 * ------------------------------------
 	 */
+/* line 101, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/structure */
+.widget {
+  font-family: san-serif; }
+
 /**
 	 * 4.4 Comments
 	 * ------------------------------------

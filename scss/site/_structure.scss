@@ -85,7 +85,12 @@
 	 * ------------------------------------
 	 */
 
-	// Insert styles here
+	blockquote{
+      background-color: #f1f7fb;
+      color: #036;
+      border-top: 1px solid rgba(255, 255, 255, .9);
+      border-bottom: 1px solid rgba(200, 200, 200, .6);
+    }
 
 
 	/**
@@ -93,7 +98,9 @@
 	 * ------------------------------------
 	 */
 
-	// Insert styles here
+     .widget{
+       font-family: san-serif;
+     }
 
 
 	/**

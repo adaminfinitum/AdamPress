@@ -21,7 +21,7 @@ $topbar-margin-bottom: 0 !default;
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: $font-weight-normal !default;
-$topbar-title-font-size: rem-calc(17) !default;
+$topbar-title-font-size: rem-calc(23) !default;
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: #333 !default;
@@ -183,7 +183,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
         margin: 0;
         font-size: $rem-base;
 
-        h1 {
+        h1,.h1 {
           line-height: $topbar-height;
           font-size: $topbar-title-font-size;
           margin: 0;
@@ -441,7 +441,7 @@ $topbar-arrows: true !default; //Set false to remove the triangle icon from the 
         .toggle-topbar { display: none; }
 
         .title-area { float: $default-float; }
-        .name h1 a { width: auto; }
+        .name .h1 a { width: auto; }
 
         input,
         .button,
