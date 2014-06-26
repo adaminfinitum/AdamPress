@@ -18,8 +18,8 @@ All contributions are welcome!
 
 ```bash
 cd my-wordpress-folder/wp-content/themes/
-git clone git@github.com:olefredrik/AdamPress.git
-mv AdamPress your-theme-name
+git clone git@github.com:olefredrik/FoundationPress.git
+mv FoundationPress your-theme-name
 cd your-theme-name
 npm install && bower install
 ```
@@ -52,8 +52,8 @@ Check for Foundation Updates? Run:
 ## Script Folder Strucutre
 
   * `bower_components/`: This is the source folder where all Foundation scripts are located. `foundation update` will check and update scripts in this folder
-  * `js/`: jQuery, Modernizr and Foundation scripts are copied from `bower_components/` to this directory, where they are minified and concatinated and enqueued in WordPress
-  * Please note that you must run `grunt` in your terminal for the scripts to be copied. See [Gruntfile.js](https://github.com/olefredrik/AdamPress/blob/master/Gruntfile.js) for details
+  * `js/`: jQuery, Modernizr and Foundation scripts are copied from `bower_components/` to this directory, where they are minified and concatanated and enqueued in WordPress
+  * Please note that you must run `grunt` in your terminal for the scripts to be copied. See [Gruntfile.js](https://github.com/olefredrik/FoundationPress/blob/master/Gruntfile.js) for details
 
 ## How to get started with Foundation
 
@@ -65,5 +65,5 @@ Check for Foundation Updates? Run:
 
 ## Demo
 
-* [Clean AdamPress install](http://AdamPress.olefredrik.com/)
-* [AdamPress Kitchen Sink - see every single element in action](http://AdamPress.olefredrik.com/kitchen-sink/)
+* [Clean FoundationPress install](http://foundationpress.olefredrik.com/)
+* [FoundationPress Kitchen Sink - see every single element in action](http://foundationpress.olefredrik.com/kitchen-sink/)
