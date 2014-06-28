@@ -1,8 +1,8 @@
 <!doctype html>
-<html class="no-js" <?php language_attributes(); ?> >
+<html dir="ltr" lang="en-US" class="no-js">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php if ( is_category() ) {
       echo 'Category Archive for &quot;'; single_cat_title(); echo '&quot; | '; bloginfo( 'name' );
     } elseif ( is_tag() ) {
