@@ -25,220 +25,246 @@
 .top-bar-container, .tab-bar {
 	margin-bottom: rem-calc(32);
 }
+.top-bar {
+  a, a:link, a:visited, a:link:visited{border-bottom: none;}
+  a:hover, a:active {text-shadow: 1px 1px 5px #000; color: #ddd;}
+  }
 
-// Fix the issue where the WP adminbar overlaps the mobile menu
-#wpadminbar {
-	position: fixed !important;
-}
+  // Fix the issue where the WP adminbar overlaps the mobile menu
+  #wpadminbar {
+    position: fixed !important;
+  }
 
-/**
- * 2.0 Typography
- * ----------------------------------------------------------------------------
- */
+  /**
+   * 2.0 Typography
+   * ----------------------------------------------------------------------------
+   */
 
-// Insert styles here
-
-
-/**
- * 3.0 Header, sidebar and footer
- * ----------------------------------------------------------------------------
- */
-
-// Insert styles here
+  .entry-content{font-family: "Droid Serif";}
 
 
-/**
- * 4.0 Content
- * ----------------------------------------------------------------------------
- */
-.entry-content{font-family: "Droid Serif";}
+  /**
+   * 3.0 Header, sidebar and footer
+   * ----------------------------------------------------------------------------
+   */
+
+  // Insert styles here
 
 
-	/**
-	 * 4.1 Pages
-	 * ------------------------------------
-	 */
-
-	 // Hero
-
-	#homepage-hero {
-		background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074E68;
-		padding: rem-calc(20) 0;
-		margin: - rem-calc(32) 0 rem-calc(32);
-		position: relative;
-		text-align: left;
-		height: auto;
-
-			h1 a, h4 { color: #fff; }
-
-			.floatingyeti img {
-				max-width: 30%;
-				position: absolute;
-				right: rem-calc(100);
-			}
-
-			.download { margin-top: rem-calc(20); }
-		}
+  /**
+   * 4.0 Content
+   * ----------------------------------------------------------------------------
+   */
 
 
-	/**
-	 * 4.2 Posts
-	 * ------------------------------------
-	 */
 
-	blockquote{
-      background-color: #f1f7fb;
-      color: #036;
-      border-top: 1px solid rgba(255, 255, 255, .9);
-      border-bottom: 1px solid rgba(200, 200, 200, .6);
+  /**
+   * 4.1 Pages
+   * ------------------------------------
+   */
+
+  // Hero
+
+  #homepage-hero {
+    background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074E68;
+    padding: rem-calc(20) 0;
+    margin: - rem-calc(32) 0 rem-calc(32);
+    position: relative;
+    text-align: left;
+    height: auto;
+
+    h1 a, h4 { color: #fff; }
+
+    .floatingyeti img {
+      max-width: 30%;
+      position: absolute;
+      right: rem-calc(100);
     }
 
-
-	/**
-	 * 4.3 Widgets
-	 * ------------------------------------
-	 */
+    .download { margin-top: rem-calc(20); }
+  }
 
 
-	/**
-	 * 4.4 Comments
-	 * ------------------------------------
-	 */
+  /**
+   * 4.2 Posts
+   * ------------------------------------
+   */
 
-	// Insert styles here
+  blockquote{
+    background-color: #f1f7fb;
+    color: #036;
+    border-top: 1px solid rgba(200, 200, 200, .6);
+    border-bottom: 1px solid rgba(255, 255, 255, .9);
 
-
-	/**
-	 * 4.5 Lists
-	 * ------------------------------------
-	 */
-
-	// Insert styles here
-
-
-	/**
-	 * 4.6 Forms
-	 * ------------------------------------
-	 */
-
-	// Insert styles here
+    p {color:#036;}
+  }
 
 
-/**
- * 5.0 Plugins
- * ----------------------------------------------------------------------------
- */
+  /**
+   * 4.3 Widgets
+   * ------------------------------------
+   */
 
-// Insert styles here
+  .widget_tag_cloud a,
+  .widget_tag_cloud a:link{text-decoration:none;color:#036;border-bottom: none; padding-bottom:0; } /* a:link is needed to overcome default browser styling in Chrome */
 
+  .widget_tag_cloud a:visited,
+  .widget_tag_cloud a:link:visited{text-decoration:none;color:#006ec6; border-bottom:none; padding-bottom:0;}
 
-/**
- * 6.0 Custom Styles
- * ---------------------------------------------------------------
- */
+  .widget_tag_cloud a:hover{text-decoration:none;border-bottom: none;}
 
-/* Matching classes assigned so we don't use headings for visual styling
-concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
+  /**
+   * 4.4 Comments
+   * ------------------------------------
+   */
 
-h1,
-.h1-style{ }
-
-h2,
-.h2-style{ }
-
-h3,
-.h3-style{ }
-
-h4,
-.h4-style{ }
-
-h5,
-.h5-style{ }
-
-h6,
-.h6-style{ }
+  // Insert styles here
 
 
-/** i is semantic HTML5 for things which shouldn't be read with 'emphasis' by a screenreader (like a latin species name)
- * italic-style is for things which are only italicized visually, with no added semantic importance
- */
+  /**
+   * 4.5 Lists
+   * ------------------------------------
+   */
 
-i,
-em,
-.italic-style{font-style: italic;}
+  // Insert styles here
 
-/** b is semantic HTML5 for things which shouldn't be read in a 'strong' voice by a screenreader
- * bold-style is for things which are only bold visually, with no added semantic importance
- */
 
-b,
-.bold-style{font-weight:bolder;}
+  /**
+   * 4.6 Forms
+   * ------------------------------------
+   */
 
-/** since 'strong' does have semantic emphasis we make it 'bold' not just 'bolder' */
+  // Insert styles here
 
-strong{font-weight:bold;}
 
-abbr[title]{border-bottom:thin dotted rgba(122, 122, 122, .5);}
+  /**
+   * 5.0 Plugins
+   * ----------------------------------------------------------------------------
+   */
 
-/* no (dotted) bottom border for abbr in headlines, because it looks stupid */
-h1>abbr,
-h2>abbr,
-h3>abbr,
-h4>abbr,
-h5>abbr,
-h6>abbr{border-bottom:none;}
+  // Insert styles here
 
-/* courtesy of twitter bootstrap */
 
-abbr.initialism{text-transform: uppercase; font-size:90%;}
+  /**
+   * 6.0 Custom Styles
+   * ---------------------------------------------------------------
+   */
 
-/* The order of link psudeo class properties matters... */
-a,
-a:link{text-decoration:none;color:#036;border-bottom:1px solid #a8bfcf;padding-bottom:0; } /* a:link is needed to overcome default browser styling in Chrome */
+  /* Matching classes assigned so we don't use headings for visual styling
+  concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
 
-a:visited{text-decoration:none;color:#006ec6;border-bottom:1px solid #fff;padding-bottom:0; }
+  /*
+  h1,
+  .h1-style{ }
 
-a:hover{text-decoration:none;border-bottom:#005a9c 2px solid }
+  h2,
+  .h2-style{ }
 
-a:active{text-decoration:none;outline:0 none;position:relative;top:1px; }/* a:focus is often the same as a:active and if so combine rules */
+  h3,
+  .h3-style{ }
 
-a:focus{text-decoration:none }
+  h4,
+  .h4-style{ }
 
-/* Use for location references or 'sub-headlines' that should be indexed as part of headline */
-.sub-title{
-  display:block;
-  letter-spacing:normal;
-  word-spacing:normal;
-  font-size:18px;}
+  h5,
+  .h5-style{ }
 
-.center-flow{text-align: center;}
+  h6,
+  .h6-style{ }
+  */
 
-.center-block{margin-left:auto;margin-right: auto;}
+  /** i is semantic HTML5 for things which shouldn't be read with 'emphasis' by a screenreader (like a latin species name)
+   * italic-style is for things which are only italicized visually, with no added semantic importance
+   */
 
-.ninety-text{font-size:90%;}
+  i,
+  em,
+  .italic-style{font-style: italic;}
 
-.one-ten-text{font-size:110%;}
+  /** b is semantic HTML5 for things which shouldn't be read in a 'strong' voice by a screenreader
+   * bold-style is for things which are only bold visually, with no added semantic importance
+   */
 
-/* Utility spacing classes, concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
+  b,
+  .bold-style{font-weight:bolder;}
 
-/* 'p' is for padding */
-.p1{padding:1rem;}
+  /** since 'strong' does have semantic emphasis we make it 'bold' not just 'bolder' */
 
-.p1t{padding-top:1rem;}
+  strong{font-weight:bold;}
 
-.p1r{padding-right:1rem;}
+  abbr[title]{border-bottom:thin dotted rgba(122, 122, 122, .5);}
 
-.p1b{padding-bottom:1rem;}
+  /* no (dotted) bottom border for abbr in headlines, because it looks stupid */
+  h1>abbr,
+  h2>abbr,
+  h3>abbr,
+  h4>abbr,
+  h5>abbr,
+  h6>abbr{border-bottom:none;}
 
-.p1l{padding-left:1rem;}
+  /* courtesy of twitter bootstrap */
 
-/* 'm' is for margin */
-.m1{margin:1rem;}
+  abbr.initialism{text-transform: uppercase; font-size:90%;}
 
-.m1t{margin-top:1rem;}
+  /* The order of link psudeo class properties matters... */
+  a,
+  a:link{text-decoration:none;color:#036;border-bottom:1px solid #a8bfcf;padding-bottom:0; } /* a:link is needed to overcome default browser styling in Chrome */
 
-.m1r{margin-right:1rem;}
+  a:visited,
+  a:link:visited{text-decoration:none;color:#006ec6; border-bottom:1px solid #fff; padding-bottom:0;}
 
-.m1b{margin-bottom:1rem;}
+  a:hover{text-decoration:none;border-bottom:#005a9c 2px solid }
 
-.m1s{margin-left:1rem;}
+  a:active{text-decoration:none;outline:0 none;position:relative;top:1px; }/* a:focus is often the same as a:active and if so combine rules */
+
+  a:focus{text-decoration:none }
+
+  /* Use for location references or 'sub-headlines' that should be indexed as part of headline */
+  .sub-title{
+    display:block;
+    letter-spacing:normal;
+    word-spacing:normal;
+    font-size:18px;}
+
+  .center-flow{text-align: center;}
+
+  .center-block{margin-left:auto;margin-right: auto;}
+
+  .ninety-text{font-size:90%;}
+
+  .one-ten-text{font-size:110%;}
+
+  /* Utility spacing classes, concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
+
+  /* 'p' is for padding */
+  .p1{padding:1rem;}
+
+  .p1t{padding-top:1rem;}
+
+  .p1r{padding-right:1rem;}
+
+  .p1b{padding-bottom:1rem;}
+
+  .p1l{padding-left:1rem;}
+
+  /* 'm' is for margin */
+  .m1{margin:1rem;}
+
+  .m1t{margin-top:1rem;}
+
+  .m1r{margin-right:1rem;}
+
+  .m1b{margin-bottom:1rem;}
+
+  .m1s{margin-left:1rem;}
+
+  /** Mobile Nav
+   *
+   */
+  .tab-bar{
+    a, a:link, a:visited, a:link:visited {border-bottom:none;}
+    a:hover, a:link:hover, a:active, a:link:active, .menu-icon:hover, .menu-icon:active {text-shadow: 1px 1px 5px #000; color: #ddd;}
+  }
+
+
+

@@ -158,7 +158,7 @@ $small-font-size: 75%;
 // $paragraph-text-rendering: optimizeLegibility;
 
 // We use these to style <code> tags
-// $code-color: scale-color($alert-color, $lightness: -27%);
+ $code-color: #707;
 // $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
 // $code-font-weight: bold;
 
@@ -1177,7 +1177,7 @@ $tabs-navigation-font-family: $header-font-family;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
-// $topbar-title-font-size: rem-calc(17);
+ $topbar-title-font-size: rem-calc(20);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: #333;

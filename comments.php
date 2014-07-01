@@ -84,7 +84,7 @@
 			<label for="comment"><?php _e('Comment', 'AdamPress'); ?></label>
 			<textarea name="comment" id="comment" tabindex="4"></textarea>
 		</p>
-		<p id="allowed_tags" class="small"><strong>XHTML:</strong> <?php _e('You can use these tags:','AdamPress'); ?> <code><?php echo allowed_tags(); ?></code></p>
+		<p id="allowed_tags" class="small"><strong>HTML:</strong> <?php _e('You can use these elements and attributes:','AdamPress'); ?> <code><?php echo allowed_tags(); ?></code></p>
 		<p><input name="submit" class="button" type="submit" id="submit" tabindex="5" value="<?php esc_attr_e('Submit Comment', 'AdamPress'); ?>"></p>
 		<?php comment_id_fields(); ?>
 		<?php do_action('comment_form', $post->ID); ?>
