@@ -4,7 +4,10 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss', 'scss']
+        includePaths: [
+            'bower_components/foundation/scss',
+            'bower_component/compass-mixins/lib'
+        ]
       },
       dist: {
         options: {

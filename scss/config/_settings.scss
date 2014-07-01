@@ -10,7 +10,7 @@
 // $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import 'bower_components/foundation/scss/foundation/functions';
+@import 'foundation/_functions';
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -41,7 +41,7 @@
 // We use these to control various global styles
 $body-bg: #eee;
 $body-font-color: #333;
-$body-font-family: "Droid Serif", sans-serif;
+$body-font-family: "Open Sans", sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 

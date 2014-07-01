@@ -51,6 +51,7 @@
  * 4.0 Content
  * ----------------------------------------------------------------------------
  */
+.entry-content{font-family: "Droid Serif";}
 
 
 	/**
@@ -98,10 +99,6 @@
 	 * ------------------------------------
 	 */
 
-     .widget{
-       font-family: san-serif;
-     }
-
 
 	/**
 	 * 4.4 Comments
@@ -133,3 +130,115 @@
  */
 
 // Insert styles here
+
+
+/**
+ * 6.0 Custom Styles
+ * ---------------------------------------------------------------
+ */
+
+/* Matching classes assigned so we don't use headings for visual styling
+concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
+
+h1,
+.h1-style{ }
+
+h2,
+.h2-style{ }
+
+h3,
+.h3-style{ }
+
+h4,
+.h4-style{ }
+
+h5,
+.h5-style{ }
+
+h6,
+.h6-style{ }
+
+
+/** i is semantic HTML5 for things which shouldn't be read with 'emphasis' by a screenreader (like a latin species name)
+ * italic-style is for things which are only italicized visually, with no added semantic importance
+ */
+
+i,
+em,
+.italic-style{font-style: italic;}
+
+/** b is semantic HTML5 for things which shouldn't be read in a 'strong' voice by a screenreader
+ * bold-style is for things which are only bold visually, with no added semantic importance
+ */
+
+b,
+.bold-style{font-weight:bolder;}
+
+/** since 'strong' does have semantic emphasis we make it 'bold' not just 'bolder' */
+
+strong{font-weight:bold;}
+
+abbr[title]{border-bottom:thin dotted rgba(122, 122, 122, .5);}
+
+/* no (dotted) bottom border for abbr in headlines, because it looks stupid */
+h1>abbr,
+h2>abbr,
+h3>abbr,
+h4>abbr,
+h5>abbr,
+h6>abbr{border-bottom:none;}
+
+/* courtesy of twitter bootstrap */
+
+abbr.initialism{text-transform: uppercase; font-size:90%;}
+
+/* The order of link psudeo class properties matters... */
+a,
+a:link{text-decoration:none;color:#036;border-bottom:1px solid #a8bfcf;padding-bottom:0; } /* a:link is needed to overcome default browser styling in Chrome */
+
+a:visited{text-decoration:none;color:#006ec6;border-bottom:1px solid #fff;padding-bottom:0; }
+
+a:hover{text-decoration:none;border-bottom:#005a9c 2px solid }
+
+a:active{text-decoration:none;outline:0 none;position:relative;top:1px; }/* a:focus is often the same as a:active and if so combine rules */
+
+a:focus{text-decoration:none }
+
+/* Use for location references or 'sub-headlines' that should be indexed as part of headline */
+.sub-title{
+  display:block;
+  letter-spacing:normal;
+  word-spacing:normal;
+  font-size:18px;}
+
+.center-flow{text-align: center;}
+
+.center-block{margin-left:auto;margin-right: auto;}
+
+.ninety-text{font-size:90%;}
+
+.one-ten-text{font-size:110%;}
+
+/* Utility spacing classes, concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
+
+/* 'p' is for padding */
+.p1{padding:1rem;}
+
+.p1t{padding-top:1rem;}
+
+.p1r{padding-right:1rem;}
+
+.p1b{padding-bottom:1rem;}
+
+.p1l{padding-left:1rem;}
+
+/* 'm' is for margin */
+.m1{margin:1rem;}
+
+.m1t{margin-top:1rem;}
+
+.m1r{margin-right:1rem;}
+
+.m1b{margin-bottom:1rem;}
+
+.m1s{margin-left:1rem;}
