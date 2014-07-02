@@ -57,6 +57,41 @@
    */
 
 
+/*Language-specific*/
+:lang(af){quotes:'\201E' '\201D' '\201A' '\2019';}
+:lang(ak){font-family:Lucida,"DejaVu Sans",inherit;}
+:lang(ar){font-family:Tahoma 12,Nazli,KacstOne,"DejaVu Sans",inherit;}
+:lang(bg){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(bn){font-family:FreeSans,MuktiNarrow,Vrinda,inherit;font-size:1.1em;line-height:1.4em;}
+:lang(cs){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(da){quotes:'\00BB' '\00AB' '\203A' '\2039';}
+:lang(de){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(el){font-family:"DejaVu Sans",inherit;quotes:'\00AB' '\00BB' '\2039' '\203A';}
+:lang(en-GB){quotes:'\2018' '\2019' '\201C' '\201D';}
+:lang(es){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+:lang(fa){font-family:Terafik,Traffic,Roya,Nazli,Nazanin,sans;font-size:1.5em;}
+:lang(fi){quotes:'\201D' '\201D' '\2019' '\2019';}
+:lang(fr){quotes:'\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';}
+:lang(hr){quotes:'\00BB' '\00AB' '\203A' '\2039';}
+:lang(is){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(ja){font-size:1.1em;}
+:lang(km){font-family:"Khmer OS System","Khmer OS","Khmer Kampongtrach","CDT Khmer",inherit;line-height:2em;}
+:lang(ko){font-size:1.1em;}
+:lang(lt){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(nl){quotes:'\201E' '\201D' '\201A' '\2019';}
+:lang(pl){quotes:'\201E' '\201D' '\201A' '\2019';}
+:lang(ro){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(ru) {quotes:'\00AB' '\00BB' '\201E' '\201C';}
+:lang(sk){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(sq){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+:lang(sr){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(sv){quotes:'\201D' '\201D' '\2019' '\2019';}
+:lang(tr){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+:lang(vi){font-family:"Lucida Grande","Vu Phu Tho","DejaVu Sans",inherit;}
+:lang(vi) a:hover,:lang(vi) a:active{text-decoration:none;color:#606047;}
+:lang(zh){font-size:1.5em;}
+
+
 
   /**
    * 4.1 Pages
@@ -92,11 +127,11 @@
 
   blockquote{
     background-color: #f1f7fb;
-    color: #036;
+    color: #456;
     border-top: 1px solid rgba(200, 200, 200, .6);
     border-bottom: 1px solid rgba(255, 255, 255, .9);
 
-    p {color:#036;}
+    p {color:#456;}
   }
 
 
@@ -104,6 +139,38 @@
    * 4.3 Widgets
    * ------------------------------------
    */
+
+  .widget{padding:1rem;}
+
+  .widget h6
+  {
+  position: relative;
+  width: 100%;
+  font-size: 110%;
+  padding: 6px 20px 6px 70px;
+  margin: 30px 10px 10px 0;
+  color: #555;
+  background-color: #fff;
+  text-shadow: 0px 1px 2px #bbb;
+  -webkit-box-shadow: 0px 2px 4px #888;
+  -moz-box-shadow: 0px 2px 4px #888;
+  box-shadow: 0px 2px 4px #888;
+  }
+  .widget h6:after
+  {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  top: 100%;
+  border-width: 5px 10px;
+  border-style: solid;
+  border-color: #666 #666 transparent transparent;
+  }
+  .widget ul, .widget .tagcloud{padding-left: 2rem; padding-top:1rem;}
+
+
 
   .widget_tag_cloud a,
   .widget_tag_cloud a:link{text-decoration:none;color:#036;border-bottom: none; padding-bottom:0; } /* a:link is needed to overcome default browser styling in Chrome */
@@ -113,10 +180,11 @@
 
   .widget_tag_cloud a:hover{text-decoration:none;border-bottom: none;}
 
-  /**
-   * 4.4 Comments
-   * ------------------------------------
-   */
+
+/**
+ * 4.4 Comments
+ * ------------------------------------
+ */
 
   // Insert styles here
 
@@ -265,6 +333,4 @@
     a, a:link, a:visited, a:link:visited {border-bottom:none;}
     a:hover, a:link:hover, a:active, a:link:active, .menu-icon:hover, .menu-icon:active {text-shadow: 1px 1px 5px #000; color: #ddd;}
   }
-
-
 

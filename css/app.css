@@ -6253,18 +6253,53 @@ th.hide-for-touch {
 /* line 93, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 blockquote {
   background-color: #f1f7fb;
-  color: #003366;
+  color: #445566;
   border-top: 1px solid rgba(200, 200, 200, 0.6);
   border-bottom: 1px solid rgba(255, 255, 255, 0.9); }
   /* line 99, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
   blockquote p {
-    color: #003366; }
+    color: #445566; }
 
 /**
    * 4.3 Widgets
    * ------------------------------------
    */
-/* line 109, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 108, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+.widget {
+  padding: 1rem; }
+
+/* line 110, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+.widget h6 {
+  position: relative;
+  width: 100%;
+  font-size: 110%;
+  padding: 6px 20px 6px 70px;
+  margin: 30px 10px 10px 0;
+  color: #555555;
+  background-color: white;
+  text-shadow: 0px 1px 2px #bbbbbb;
+  -webkit-box-shadow: 0px 2px 4px #888888;
+  -moz-box-shadow: 0px 2px 4px #888888;
+  box-shadow: 0px 2px 4px #888888; }
+
+/* line 124, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+.widget h6:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  top: 100%;
+  border-width: 5px 10px;
+  border-style: solid;
+  border-color: #666666 #666666 transparent transparent; }
+
+/* line 136, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+.widget ul, .widget .tagcloud {
+  padding-left: 2rem;
+  padding-top: 1rem; }
+
+/* line 144, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .widget_tag_cloud a, .widget_tag_cloud a:link {
   text-decoration: none;
   color: #003366;
@@ -6272,22 +6307,22 @@ blockquote {
   padding-bottom: 0; }
 
 /* a:link is needed to overcome default browser styling in Chrome */
-/* line 112, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 147, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .widget_tag_cloud a:visited, .widget_tag_cloud a:link:visited {
   text-decoration: none;
   color: #006ec6;
   border-bottom: none;
   padding-bottom: 0; }
 
-/* line 114, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 149, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .widget_tag_cloud a:hover {
   text-decoration: none;
   border-bottom: none; }
 
 /**
-   * 4.4 Comments
-   * ------------------------------------
-   */
+ * 4.4 Comments
+ * ------------------------------------
+ */
 /**
    * 4.5 Lists
    * ------------------------------------
@@ -6328,39 +6363,39 @@ blockquote {
 /** i is semantic HTML5 for things which shouldn't be read with 'emphasis' by a screenreader (like a latin species name)
    * italic-style is for things which are only italicized visually, with no added semantic importance
    */
-/* line 182, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 218, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 i, em, .italic-style {
   font-style: italic; }
 
 /** b is semantic HTML5 for things which shouldn't be read in a 'strong' voice by a screenreader
    * bold-style is for things which are only bold visually, with no added semantic importance
    */
-/* line 189, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 225, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 b, .bold-style {
   font-weight: bolder; }
 
 /** since 'strong' does have semantic emphasis we make it 'bold' not just 'bolder' */
-/* line 193, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 229, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 strong {
   font-weight: bold; }
 
-/* line 195, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 231, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 abbr[title] {
   border-bottom: thin dotted rgba(122, 122, 122, 0.5); }
 
 /* no (dotted) bottom border for abbr in headlines, because it looks stupid */
-/* line 203, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 239, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 h1 > abbr, h2 > abbr, h3 > abbr, h4 > abbr, h5 > abbr, h6 > abbr {
   border-bottom: none; }
 
 /* courtesy of twitter bootstrap */
-/* line 207, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 243, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 abbr.initialism {
   text-transform: uppercase;
   font-size: 90%; }
 
 /* The order of link psudeo class properties matters... */
-/* line 211, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 247, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 a, a:link {
   text-decoration: none;
   color: #003366;
@@ -6368,19 +6403,19 @@ a, a:link {
   padding-bottom: 0; }
 
 /* a:link is needed to overcome default browser styling in Chrome */
-/* line 214, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 250, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 a:visited, a:link:visited {
   text-decoration: none;
   color: #006ec6;
   border-bottom: 1px solid white;
   padding-bottom: 0; }
 
-/* line 216, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 252, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 a:hover {
   text-decoration: none;
   border-bottom: #005a9c 2px solid; }
 
-/* line 218, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 254, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 a:active {
   text-decoration: none;
   outline: 0 none;
@@ -6388,85 +6423,85 @@ a:active {
   top: 1px; }
 
 /* a:focus is often the same as a:active and if so combine rules */
-/* line 220, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 256, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 a:focus {
   text-decoration: none; }
 
 /* Use for location references or 'sub-headlines' that should be indexed as part of headline */
-/* line 223, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 259, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .sub-title {
   display: block;
   letter-spacing: normal;
   word-spacing: normal;
   font-size: 18px; }
 
-/* line 229, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 265, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .center-flow {
   text-align: center; }
 
-/* line 231, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 267, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .center-block {
   margin-left: auto;
   margin-right: auto; }
 
-/* line 233, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 269, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .ninety-text {
   font-size: 90%; }
 
-/* line 235, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 271, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .one-ten-text {
   font-size: 110%; }
 
 /* Utility spacing classes, concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
 /* 'p' is for padding */
-/* line 240, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 276, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .p1 {
   padding: 1rem; }
 
-/* line 242, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 278, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .p1t {
   padding-top: 1rem; }
 
-/* line 244, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 280, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .p1r {
   padding-right: 1rem; }
 
-/* line 246, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 282, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .p1b {
   padding-bottom: 1rem; }
 
-/* line 248, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 284, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .p1l {
   padding-left: 1rem; }
 
 /* 'm' is for margin */
-/* line 251, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 287, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .m1 {
   margin: 1rem; }
 
-/* line 253, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 289, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .m1t {
   margin-top: 1rem; }
 
-/* line 255, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 291, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .m1r {
   margin-right: 1rem; }
 
-/* line 257, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 293, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .m1b {
   margin-bottom: 1rem; }
 
-/* line 259, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 295, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .m1s {
   margin-left: 1rem; }
 
 /** Mobile Nav
    *
    */
-/* line 265, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 301, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .tab-bar a, .tab-bar a:link, .tab-bar a:visited, .tab-bar a:link:visited {
   border-bottom: none; }
-/* line 266, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
+/* line 302, /Users/a/Sites/vagrantpress-master/wordpress/wp-content/themes/AdamPress/scss/site/_structure */
 .tab-bar a:hover, .tab-bar a:link:hover, .tab-bar a:active, .tab-bar a:link:active, .tab-bar .menu-icon:hover, .tab-bar .menu-icon:active {
   text-shadow: 1px 1px 5px black;
   color: #dddddd; }
