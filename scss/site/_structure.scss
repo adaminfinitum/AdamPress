@@ -48,7 +48,11 @@
    * ----------------------------------------------------------------------------
    */
 
-  // Insert styles here
+ .title-area {
+   background: #1969A5; /* Old browsers */
+   background: -webkit-linear-gradient(-60deg, rgba(22,104,165,1) 0%,rgba(23,105,165,.9) 11%,rgba(37,114,170,.8) 33%,rgba(33,111,169,.9) 61%,rgba(20,103,164,1) 88%,rgba(18,102,163,1) 100%); /* Chrome10+,Safari5.1+ */
+   background: linear-gradient(120deg, rgba(22,104,165,1) 0%,rgba(23,105,165,.9) 11%,rgba(37,114,170,.8) 33%,rgba(33,111,169,.9) 61%,rgba(20,103,164,1) 88%,rgba(18,102,163,1) 100%); /* W3C */
+ }
 
 
   /**
@@ -57,39 +61,43 @@
    */
 
 
-/*Language-specific*/
-:lang(af){quotes:'\201E' '\201D' '\201A' '\2019';}
-:lang(ak){font-family:Lucida,"DejaVu Sans",inherit;}
-:lang(ar){font-family:Tahoma 12,Nazli,KacstOne,"DejaVu Sans",inherit;}
-:lang(bg){quotes:'\201E' '\201C' '\201A' '\2018';}
-:lang(bn){font-family:FreeSans,MuktiNarrow,Vrinda,inherit;font-size:1.1em;line-height:1.4em;}
-:lang(cs){quotes:'\201E' '\201C' '\201A' '\2018';}
-:lang(da){quotes:'\00BB' '\00AB' '\203A' '\2039';}
-:lang(de){quotes:'\201E' '\201C' '\201A' '\2018';}
-:lang(el){font-family:"DejaVu Sans",inherit;quotes:'\00AB' '\00BB' '\2039' '\203A';}
-:lang(en-GB){quotes:'\2018' '\2019' '\201C' '\201D';}
-:lang(es){quotes:'\00AB' '\00BB' '\2039' '\203A';}
-:lang(fa){font-family:Terafik,Traffic,Roya,Nazli,Nazanin,sans;font-size:1.5em;}
-:lang(fi){quotes:'\201D' '\201D' '\2019' '\2019';}
-:lang(fr){quotes:'\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';}
-:lang(hr){quotes:'\00BB' '\00AB' '\203A' '\2039';}
-:lang(is){quotes:'\201E' '\201C' '\201A' '\2018';}
-:lang(ja){font-size:1.1em;}
-:lang(km){font-family:"Khmer OS System","Khmer OS","Khmer Kampongtrach","CDT Khmer",inherit;line-height:2em;}
-:lang(ko){font-size:1.1em;}
-:lang(lt){quotes:'\201E' '\201C' '\201A' '\2018';}
-:lang(nl){quotes:'\201E' '\201D' '\201A' '\2019';}
-:lang(pl){quotes:'\201E' '\201D' '\201A' '\2019';}
-:lang(ro){quotes:'\201E' '\201C' '\201A' '\2018';}
-:lang(ru) {quotes:'\00AB' '\00BB' '\201E' '\201C';}
-:lang(sk){quotes:'\201E' '\201C' '\201A' '\2018';}
-:lang(sq){quotes:'\00AB' '\00BB' '\2039' '\203A';}
-:lang(sr){quotes:'\201E' '\201C' '\201A' '\2018';}
-:lang(sv){quotes:'\201D' '\201D' '\2019' '\2019';}
-:lang(tr){quotes:'\00AB' '\00BB' '\2039' '\203A';}
-:lang(vi){font-family:"Lucida Grande","Vu Phu Tho","DejaVu Sans",inherit;}
-:lang(vi) a:hover,:lang(vi) a:active{text-decoration:none;color:#606047;}
-:lang(zh){font-size:1.5em;}
+/*! Language-specific quotes */
+/** Commented out because the compiler is throwing an error on `:lang(pl)`
+*
+* :lang(af){quotes:'\201E' '\201D' '\201A' '\2019';}
+* :lang(ak){font-family:Lucida,"DejaVu Sans",inherit;}
+* :lang(ar){font-family:Tahoma 12,Nazli,KacstOne,"DejaVu Sans",inherit;}
+* :lang(bg){quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(bn){font-family:FreeSans,MuktiNarrow,Vrinda,inherit;font-size:1.1em;line-height:1.4em;}
+* :lang(cs){quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(da){quotes:'\00BB' '\00AB' '\203A' '\2039';}
+* :lang(de){quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(de)>q {quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(el){font-family:"DejaVu Sans",inherit;quotes:'\00AB' '\00BB' '\2039' '\203A';}
+* :lang(en-GB){quotes:'\2018' '\2019' '\201C' '\201D';}
+* :lang(es){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+* :lang(fa){font-family:Terafik,Traffic,Roya,Nazli,Nazanin,sans;font-size:1.5em;}
+* :lang(fi){quotes:'\201D' '\201D' '\2019' '\2019';}
+* :lang(fr){quotes:'\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';}
+* :lang(hr){quotes:'\00BB' '\00AB' '\203A' '\2039';}
+* :lang(is){quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(ja){font-size:1.1em;}
+* :lang(km){font-family:"Khmer OS System","Khmer OS","Khmer Kampongtrach","CDT Khmer",inherit;line-height:2em;}
+* :lang(ko){font-size:1.1em;}
+* :lang(lt){quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(nl){quotes:'\201E' '\201D' '\201A' '\2019';}
+* :lang(pl){quotes:'\201E' '\201D' '\201A' '\2019';}
+* :lang(ro){quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(ru){quotes:'\00AB' '\00BB' '\201E' '\201C';}
+* :lang(sk){quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(sq){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+* :lang(sr){quotes:'\201E' '\201C' '\201A' '\2018';}
+* :lang(sv){quotes:'\201D' '\201D' '\2019' '\2019';}
+* :lang(tr){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+* :lang(vi){font-family:"Lucida Grande","Vu Phu Tho","DejaVu Sans",inherit;}
+* :lang(vi) a:hover,:lang(vi) a:active{text-decoration:none;color:#606047;}
+* :lang(zh){font-size:1.5em;}
+*/
 
 
 
@@ -304,7 +312,7 @@
 
   /* Utility spacing classes, concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
 
-  /* 'p' is for padding */
+  /* `p` is for padding */
   .p1{padding:1rem;}
 
   .p1t{padding-top:1rem;}
