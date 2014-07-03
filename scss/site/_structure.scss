@@ -49,9 +49,9 @@
    */
 
  .title-area {
-   background: #1969A5; /* Old browsers */
-   background: -webkit-linear-gradient(-60deg, rgba(22,104,165,1) 0%,rgba(23,105,165,.9) 11%,rgba(37,114,170,.8) 33%,rgba(33,111,169,.9) 61%,rgba(20,103,164,1) 88%,rgba(18,102,163,1) 100%); /* Chrome10+,Safari5.1+ */
-   background: linear-gradient(120deg, rgba(22,104,165,1) 0%,rgba(23,105,165,.9) 11%,rgba(37,114,170,.8) 33%,rgba(33,111,169,.9) 61%,rgba(20,103,164,1) 88%,rgba(18,102,163,1) 100%); /* W3C */
+   background: #1969A5; /* hex fallback */
+   background: -webkit-linear-gradient(-60deg, rgba(2,90,154,.5) 0%,rgba(2,90,154,.65) 10%,rgba(22,104,165,.8) 15%,rgba(23,105,165,.9) 21%,rgba(38,124,188,.9) 33%,rgba(33,111,169,.9) 43%,rgba(20,103,164,.8) 55%,rgba(18,102,163,.7) 68%,rgba(2,90,154,.6) 90%, rgba(2,90,154,.5) 100%); /* Chrome10+,Safari5.1+ */
+   background: linear-gradient(120deg, rgba(2,90,154,.5) 0%,rgba(2,90,154,.65) 10%,rgba(22,104,165,.8) 15%,rgba(23,105,165,.9) 21%,rgba(38,124,188,.9) 33%,rgba(33,111,169,.9) 43%,rgba(20,103,164,.8) 55%,rgba(18,102,163,.7) 68%, rgba(2,90,154,.6) 90%,rgba(2,90,154,.5) 100%); /* W3C */
  }
 
 
@@ -341,4 +341,62 @@
     a, a:link, a:visited, a:link:visited {border-bottom:none;}
     a:hover, a:link:hover, a:active, a:link:active, .menu-icon:hover, .menu-icon:active {text-shadow: 1px 1px 5px #000; color: #ddd;}
   }
+
+.country-name{visibility:hidden}
+
+.twitter{background:#00a0d1}
+.youtube,.google-plus{background:#c4302b}
+.rss{background:#f60}
+.social-links{width:100%;margin:0;padding:0;overflow:hidden;list-style:none}
+.social-links li{width:3rem;height:35rem;display:inline-block;font-size:2rem;background:#ccc;float:left;padding:.5rem;margin:0}
+.social-links a{display:block;width:100%;height:100%;margin:1rem;color:#fff;border-radius:.2rem;-webkit-animation-duration:2s;-moz-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both}
+.social-links a:hover{display:block;-webkit-animation-name:fadeInUp;-moz-animation-name:fadeInUp;-o-animation-name:fadeInUp;animation-name:fadeInUp;-webkit-animation-duration:1s;-moz-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../assets/icomoon/fonts/icomoon.eot');
+  src: url('../assets/icomoon/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+       url(data:application/font-woff;charset=utf-8;base64,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) format('woff'),
+       url('../assets/icomoon/fonts/icomoon.ttf') format('truetype'),
+       url('../assets/icomoon/fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-linkedin:before {
+  content: "\f0e1";
+}
+.icon-link:before {
+  content: "\e601";
+}
+.icon-googleplus:before {
+  content: "\e603";
+}
+.icon-twitter:before {
+  content: "\e605";
+}
+.icon-feed:before {
+  content: "\e607";
+}
+.icon-github:before {
+  content: "\e609";
+}
+.icon-infinity:before {
+  content: "\221e";
+}
+
 
