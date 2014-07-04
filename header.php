@@ -45,7 +45,7 @@
     </section>
     <section class="middle tab-bar-section">
 
-      <p class="h1 title"><a href="<?php echo home_url(); ?>" rel="home" title="home"><?php bloginfo( 'name' ); ?></a></p>
+      <p class="h1 title"><a href="<?php echo home_url(); ?>" rel="home" title="home">adam <i class="icon-infinity"></i> infinitum</a></p>
 
     </section>
   </nav>
@@ -58,7 +58,7 @@
             <nav class="top-bar" data-topbar="">
                 <ul class="title-area">
                     <li class="name">
-                        <p class="h1"><a href="<?php echo home_url(); ?>" rel="home" title="home"><?php bloginfo('name'); ?></a></p>
+                        <p class="h1"><a href="<?php echo home_url(); ?>" rel="home" title="home">adam <i class="icon-infinity"></i> infinitum</a></p>
                     </li>
                 </ul>
                 <section class="top-bar-section">
